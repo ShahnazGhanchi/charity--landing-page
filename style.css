@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.icon{
+   background-color: rgb(228, 186, 82);
+
+}
+.btn{
+    background-color: rgb(228, 186, 82);
+    border: none;
+
+}
+.text{
+     color: rgb(228, 186, 82)!important;
+}
+.main{
+    background-image: url(./images/slider-1.jpeg);
+}
+.hover-zoom{
+     transition: all 0.3s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .logo-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+  .logo-track {
+  animation: scrollLogos 20s linear infinite;
+  width: max-content;
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.hover-card{
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-card:hover {
+  background-color:grey;
+  color: white;
+}
+
+.hover-card .card-info {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-card:hover .card-info {
+  opacity: 1;
+}
+
+
+ .transperentcontainer{
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/story-image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+transperentcontainer h2 {
+    /* text-align: center;
+    color: black; */
+    font-size: 50px;
+    line-height: 1.5em;
+    padding-top: 25px;
+    text-transform: capitalize;
+    
+}
+.transperentcontainer p{
+    text-align: center;
+    line-height: 1,2em;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: 30px;
+}
